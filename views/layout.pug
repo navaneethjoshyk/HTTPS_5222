@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title Mongoose Movies Lab
+    style.
+      body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 2rem; }
+      header { display: flex; gap: 1rem; align-items: baseline; }
+      ul { padding-left: 1.2rem; }
+      code, pre { background: #f5f5f7; padding: .5rem; border-radius: 8px; display: block; overflow-x: auto; }
+      .muted { color: #666; }
+      .pill { display:inline-block; padding: .15rem .5rem; border-radius: 999px; background:#eee; font-size: .85rem; }
+      form { margin-top: 1rem; display: grid; gap: .5rem; max-width: 380px; }
+      input, select, button { font: inherit; padding: .5rem .6rem; }
+      .row { display: grid; grid-template-columns: 1fr 2fr; gap: .5rem; align-items: center; }
+  body
+    header
+      h1 Mongoose Movies
+      nav
+        a(href="/") Home
+        |  · 
+        a(href="/seed") Seed
+        |  · 
+        a(href="/update-demo") Update Demo
+        |  · 
+        a(href="/delete-demo") Delete Demo
+    block content
